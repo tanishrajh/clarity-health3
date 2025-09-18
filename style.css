@@ -1,0 +1,139 @@
+/* Custom styles for Clarity Health */
+
+.upload-area {
+    border: 2px dashed var(--pico-muted-border-color);
+    border-radius: var(--pico-border-radius);
+    padding: 2rem;
+    text-align: center;
+    margin: 1rem 0;
+    transition: border-color 0.3s ease;
+}
+
+.upload-area:hover {
+    border-color: var(--pico-primary);
+}
+
+.upload-area.drag-over {
+    border-color: var(--pico-primary);
+    background-color: var(--pico-primary-background);
+}
+
+/* Status indicators */
+.status-normal {
+    color: #28a745;
+    font-weight: 600;
+}
+
+.status-high {
+    color: #dc3545;
+    font-weight: 600;
+}
+
+.status-low {
+    color: #ffc107;
+    font-weight: 600;
+}
+
+.status-borderline {
+    color: #fd7e14;
+    font-weight: 600;
+}
+
+/* Results table styling */
+#results-table {
+    margin-top: 1rem;
+}
+
+#results-table td:last-child {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    max-width: 300px;
+}
+
+/* Chart container */
+.chart-container {
+    margin: 1rem 0;
+    height: 400px;
+    position: relative;
+}
+
+.chart-controls {
+    margin: 1rem 0;
+}
+
+/* Error styling */
+.error-message {
+    background-color: var(--pico-del-background-color);
+    border-left: 4px solid #dc3545;
+}
+
+/* History styling */
+.history-item {
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: 1px solid var(--pico-muted-border-color);
+    border-radius: var(--pico-border-radius);
+    background-color: var(--pico-card-background-color);
+}
+
+.history-date {
+    font-weight: 600;
+    color: var(--pico-primary);
+    margin-bottom: 0.5rem;
+}
+
+.history-summary {
+    font-size: 0.9rem;
+    color: var(--pico-muted-color);
+}
+
+/* Loading states */
+.loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+#loading-spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #results-table {
+        font-size: 0.8rem;
+    }
+    
+    #results-table td:last-child {
+        max-width: 200px;
+    }
+    
+    .chart-container {
+        height: 300px;
+    }
+}
+
+/* Accessibility improvements */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Focus indicators */
+input[type="file"]:focus,
+button:focus,
+select:focus {
+    outline: 2px solid var(--pico-primary);
+    outline-offset: 2px;
+}

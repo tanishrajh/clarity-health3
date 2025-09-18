@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarity Health - Simplified Lab Reports</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="container">
+        <nav>
+            <ul>
+                <li><h1 id="app-title">🩺 Clarity Health</h1></li>
+            </ul>
+            <ul>
+                <li>
+                    <select id="language-select">
+                        <option value="en">English</option>
+                        <option value="hi">हिन्दी (Hindi)</option>
+                        <option value="kn">ಕನ್ನಡ (Kannada)</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Upload Section -->
+        <section id="upload-section">
+            <article>
+                <header>
+                    <h2 id="upload-title">Upload Your Lab Report</h2>
+                    <p id="upload-subtitle">Your data never leaves your browser. All processing happens locally on your device.</p>
+                </header>
+                
+                <div class="upload-area">
+                    <input type="file" id="file-input" accept="image/*" aria-describedby="file-help">
+                    <small id="file-help">Drag & drop a file or click to select. Supported formats: JPG, PNG.</small>
+                </div>
+                
+                <footer>
+                    <button id="process-btn" disabled>
+                        <span id="process-text">Process Report</span>
+                        <div id="loading-spinner" class="spinner" style="display: none;"></div>
+                    </button>
+                </footer>
+            </article>
+        </section>
+
+        <!-- Error Display -->
+        <section id="error-section" style="display: none;">
+            <article class="error-message">
+                <header>
+                    <h3 id="error-title">⚠️ Processing Error</h3>
+                </header>
+                <p id="error-text"></p>
+                <footer>
+                    <button id="retry-btn" class="secondary">Try Again</button>
+                </footer>
+            </article>
+        </section>
+
+        <!-- Results Section -->
+        <section id="results-section" style="display: none;">
+            <article>
+                <header>
+                    <h2 id="results-title">Your Results - Simplified</h2>
+                </header>
+                
+                <div class="results-container">
+                    <table role="grid">
+                        <thead>
+                            <tr>
+                                <th id="th-test">Test</th>
+                                <th id="th-value">Your Value</th>
+                                <th id="th-status">Status</th>
+                                <th id="th-means">What This Means</th>
+                            </tr>
+                        </thead>
+                        <tbody id="results-tbody">
+                            <!-- Results will be populated here -->
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+        </section>
+
+        <!-- Chart Section -->
+        <section id="chart-section" style="display: none;">
+            <article>
+                <header>
+                    <h2 id="chart-title">Health Trends</h2>
+                </header>
+                <label for="biomarker-select" id="chart-select-label">Select a biomarker to see its trend over time:</label>
+                <select id="biomarker-select">
+                    <option value="" id="chart-select-placeholder">Choose a biomarker...</option>
+                </select>
+                <div class="chart-container">
+                    <canvas id="trend-chart"></canvas>
+                </div>
+            </article>
+        </section>
+
+        <!-- History Section -->
+        <section id="history-section">
+            <details>
+                <summary id="history-summary">View Previous Reports</summary>
+                <div id="history-container">
+                    <p id="no-history">No previous reports found.</p>
+                    <div id="history-list"></div>
+                </div>
+                <button id="clear-history-btn" class="secondary outline">Clear All History</button>
+            </details>
+        </section>
+    </main>
+
+    <footer class="container">
+        <hr>
+        <p><small id="footer-privacy">🔒 All data processing happens locally in your browser. Your health information never leaves your device.</small></p>
+    </footer>
+
+    <!-- CDN Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+    
+    <!-- App Script -->
+    <script src="app.js"></script>
+</body>
+</html>

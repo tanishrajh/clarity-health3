@@ -1,0 +1,133 @@
+{
+  "biomarkers": {
+    "hemoglobin": {
+      "name": "Hemoglobin",
+      "unit": "g/dL",
+      "ranges": {
+        "male": { "low": 13.5, "high": 17.5 },
+        "female": { "low": 12.0, "high": 15.5 }
+      },
+      "explanations": {
+        "low": "This may indicate anemia, which means your blood has fewer red blood cells than normal or less hemoglobin. This can be caused by nutritional deficiencies (like iron or B12), blood loss, or other conditions. You might feel tired, weak, or short of breath. Consider discussing iron-rich foods like spinach and red meat with your doctor.",
+        "normal": "Excellent! Your hemoglobin level is in a healthy range, indicating your blood can effectively carry oxygen from your lungs to the rest of your body.",
+        "high": "This could suggest your blood has a higher concentration of red blood cells, which can be caused by dehydration, smoking, or living at a high altitude. In rare cases, it can point to a condition called polycythemia. Staying well-hydrated is important. Please consult your doctor for further evaluation."
+      }
+    },
+    "ldl_cholesterol": {
+      "name": "LDL Cholesterol",
+      "unit": "mg/dL",
+      "ranges": {
+        "optimal": 100,
+        "near_optimal": 129,
+        "borderline": 159,
+        "high": 189
+      },
+      "explanations": {
+        "low": "This is generally excellent for heart health. LDL is often called 'bad cholesterol' because high levels can lead to plaque buildup in your arteries. A low level is a great sign.",
+        "normal": "Your LDL cholesterol is in a healthy range, which helps reduce your risk of heart disease and stroke. Keep up your balanced diet and regular exercise.",
+        "borderline": "Your LDL level is borderline high. This is a good time to focus on lifestyle changes, such as reducing saturated fats (found in fatty meats and full-fat dairy) and increasing fiber intake. Discuss a plan with your doctor.",
+        "high": "High LDL significantly increases your risk for heart disease and stroke by contributing to artery-clogging plaque. It's very important to speak with your doctor about a management plan, which may include diet, exercise, and potentially medication."
+      }
+    },
+    "glucose": {
+      "name": "Blood Glucose",
+      "unit": "mg/dL",
+      "ranges": {
+        "normal": { "fasting": 99, "random": 140 }
+      },
+      "explanations": {
+        "low": "Low blood sugar (hypoglycemia) can cause symptoms like dizziness, shakiness, and fatigue. If this happens frequently, it's important to talk to your doctor to understand the cause.",
+        "normal": "Your blood sugar is in the ideal range. This indicates your body is managing insulin and energy effectively. Maintaining a healthy diet and active lifestyle helps keep it this way.",
+        "high": "Elevated blood sugar can be a sign of prediabetes or diabetes, which increases the risk of heart disease, kidney problems, and other issues over time. Reducing sugar and refined carbohydrate intake is a good step. Please consult your doctor."
+      }
+    },
+    "total_cholesterol": {
+      "name": "Total Cholesterol",
+      "unit": "mg/dL",
+      "ranges": {
+        "desirable": 200,
+        "borderline": 239
+      },
+      "explanations": {
+        "low": "While often good, very low cholesterol is uncommon and should be discussed with your doctor to ensure it's not linked to an underlying issue.",
+        "normal": "This is a desirable level. Your total cholesterol, which includes LDL and HDL, is within a range that's healthy for your heart. Continue your healthy habits!",
+        "borderline": "Your cholesterol is borderline high. This is a warning sign for cardiovascular risk. Focusing on a heart-healthy diet, regular exercise, and stress management can help lower it. A conversation with your doctor is recommended.",
+        "high": "High total cholesterol is a significant risk factor for heart disease. It's crucial to work with a healthcare provider to lower it through lifestyle changes and, if necessary, medication."
+      }
+    },
+    "hdl_cholesterol": {
+      "name": "HDL Cholesterol",
+      "unit": "mg/dL",
+      "ranges": {
+        "male": { "low": 40 },
+        "female": { "low": 50 }
+      },
+      "explanations": {
+        "low": "HDL is 'good cholesterol' because it helps remove bad cholesterol from your arteries. A low level increases your heart disease risk. Activities like aerobic exercise and eating healthy fats (avocado, nuts) can help raise it.",
+        "normal": "Great! Your HDL level is in a range that is protective against heart disease. This is a positive indicator of your cardiovascular health.",
+        "high": "A high HDL level is excellent and is strongly associated with a lower risk of heart disease. This is a result worth celebrating!"
+      }
+    },
+    "rbc_count": {
+      "name": "Red Blood Cell Count",
+      "unit": "mill/cumm",
+      "ranges": {
+        "male": { "low": 4.5, "high": 5.5 },
+        "female": { "low": 4.0, "high": 5.0 }
+      },
+      "explanations": {
+        "low": "A low count of red blood cells, which carry oxygen, can indicate anemia. This might be due to nutritional deficiencies, chronic disease, or blood loss. You should discuss these results with your doctor.",
+        "normal": "Your red blood cell count is healthy. This means your body has the right amount of cells to transport oxygen efficiently, which is vital for your energy and overall health.",
+        "high": "An elevated RBC count can be a sign of dehydration or conditions that cause low oxygen levels, like lung disease or living at high altitudes, prompting your body to make more RBCs. Be sure to consult your doctor."
+      }
+    },
+    "wbc_count": {
+      "name": "White Blood Cell Count",
+      "unit": "cumm",
+      "ranges": {
+        "normal": { "low": 4000, "high": 11000 }
+      },
+      "explanations": {
+        "low": "A low WBC count (leukopenia) can mean your body's ability to fight infection is weakened. This can be caused by certain medications, autoimmune disorders, or bone marrow issues. It's important to discuss this with a doctor.",
+        "normal": "Your white blood cell count is in the normal range, indicating you have a healthy and functioning immune system ready to fight off infections.",
+        "high": "An elevated WBC count (leukocytosis) usually means your body is fighting an infection or dealing with inflammation. It's a sign that your immune system is active. Your doctor can help determine the underlying cause."
+      }
+    },
+    "platelet_count": {
+      "name": "Platelet Count",
+      "unit": "cumm",
+      "ranges": {
+        "normal": { "low": 150000, "high": 410000 }
+      },
+      "explanations": {
+        "low": "Low platelets (thrombocytopenia) can lead to bruising easily and prolonged bleeding, as platelets are essential for blood clotting. This can be caused by various conditions and should be evaluated by a doctor.",
+        "normal": "Your platelet count is in the healthy range, meaning your blood has the proper ability to form clots to stop bleeding when necessary.",
+        "high": "A high platelet count (thrombocytosis) can increase the risk of unnecessary blood clotting. It may be a reaction to an infection or inflammation, or indicate another medical condition. A medical consultation is recommended."
+      }
+    },
+    "pcv": {
+      "name": "Packed Cell Volume (PCV)",
+      "unit": "%",
+      "ranges": {
+        "male": { "low": 40, "high": 50 },
+        "female": { "low": 36, "high": 46 }
+      },
+      "explanations": {
+        "low": "Also known as Hematocrit, a low PCV indicates a lower percentage of red blood cells, which is a key sign of anemia or over-hydration. This requires further investigation by a healthcare professional.",
+        "normal": "Your PCV is normal, meaning you have a healthy proportion of red blood cells in your blood volume. This is a good indicator of your hydration and nutritional status.",
+        "high": "A high PCV suggests a higher concentration of red blood cells, which is often caused by dehydration or can be linked to the same conditions that cause a high RBC count. It is important to discuss this with your doctor."
+      }
+    }
+  },
+  "common_patterns": [
+    { "pattern": "hemoglobin|hgb|hb", "biomarker": "hemoglobin" },
+    { "pattern": "ldl|ldl cholesterol|low density lipoprotein", "biomarker": "ldl_cholesterol" },
+    { "pattern": "glucose|blood sugar|bg", "biomarker": "glucose" },
+    { "pattern": "total cholesterol|cholesterol total", "biomarker": "total_cholesterol" },
+    { "pattern": "hdl|hdl cholesterol|high density lipoprotein", "biomarker": "hdl_cholesterol" },
+    { "pattern": "rbc count|red blood cell|total rbc", "biomarker": "rbc_count" },
+    { "pattern": "wbc count|white blood cell|total wbc", "biomarker": "wbc_count" },
+    { "pattern": "platelet count|platelets", "biomarker": "platelet_count" },
+    { "pattern": "pcv|packed cell volume|hematocrit", "biomarker": "pcv" }
+  ]
+}
