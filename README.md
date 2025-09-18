@@ -1,5 +1,8 @@
 Clarity Health 🩺
+
 Demystify Your Medical Reports. Instantly, Privately, and Offline.
+
+
 
 🚀 How to Use (Quick Start)
 Download: Download all project files into a single folder on your computer.
@@ -14,10 +17,12 @@ Upload: In the browser tab that opens, upload a JPG or PNG file of a medical rep
 
 Analyze: Click the "Process Report" button to get your simplified results!
 
+
+
 🩺 What is Clarity Health?
 Clarity Health is a privacy-first tool that uses client-side AI to instantly analyze images of your medical lab reports. It extracts key health data, explains what it means in simple terms, and works completely offline—your sensitive data never leaves your device.
 
-Built for a 24-hour hackathon.
+
 
 ✨ Key Features
 📈 Image-Based Report Analysis: Upload a JPG or PNG of your lab report for instant analysis.
@@ -32,6 +37,8 @@ Built for a 24-hour hackathon.
 
 🌐 Fully Offline: After the initial page load, the app works completely offline. Because the knowledge base is embedded, you can even run it by simply opening the index.html file locally.
 
+
+
 🛠️ How It Works
 The application follows a simple, powerful, and private workflow:
 
@@ -42,6 +49,8 @@ Client-Side OCR: The browser uses the Tesseract.js library (a task-specific AI m
 Parse & Interpret: A robust JavaScript parsing engine searches the extracted text for known biomarkers, extracts their values, and applies heuristics to correct common OCR errors (like missed decimal points).
 
 Display: The results are cross-referenced with an embedded knowledge base to provide simplified explanations and status indicators (Low, Normal, High) in a clean, readable table.
+
+
 
 🚀 Tech Stack
 Frontend: HTML5, CSS3, Vanilla JavaScript (ES6+)
