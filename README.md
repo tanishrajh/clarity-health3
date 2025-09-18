@@ -1,5 +1,5 @@
 Clarity Health 🩺
-
+<br>
 Demystify Your Medical Reports. Instantly, Privately, and Offline.
 
 
