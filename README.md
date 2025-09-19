@@ -53,6 +53,13 @@ The application follows a simple, powerful, and private workflow:
 
 ---
 
+## Data set
+
+* **knowledge_base.json** This file contains all data used to give us reports
+
+
+---
+
 ## 🔮 Future Improvements
 
 * **Multi-Language Support:** Integrate the existing translations for Hindi and Kannada to improve accessibility.
