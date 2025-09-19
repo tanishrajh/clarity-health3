@@ -6,7 +6,7 @@
 
 ## 🚀 How to Use (Quick Start)
 
-1.  **Download:** Download all project files into a single folder on your computer.
+1.  **Download:** Download all project files into a single folder on your computer(Demo media not required).
 2.  **Open in Editor:** Open the entire folder in a code editor like VS Code.
 3.  **Install Live Server:** In VS Code, go to the Extensions tab and install the "Live Server" extension if you don't have it already. 
 4.  **Run:** Right-click on the `index.html` file in the VS Code explorer and select "Open with Live Server".
